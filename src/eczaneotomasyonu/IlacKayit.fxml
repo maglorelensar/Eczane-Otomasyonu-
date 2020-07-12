@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="822.0" style="-fx-background-color: #00d9ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eczaneotomasyonu.IlacKayitController">
+   <children>
+      <Label layoutX="17.0" prefHeight="63.0" prefWidth="163.0" text="İlac Kayit " textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="71.0" prefHeight="19.0" prefWidth="57.0" text="İlac No :">
+         <font>
+            <Font name="Trebuchet MS" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtNo" layoutX="7.0" layoutY="89.0" prefHeight="31.0" prefWidth="163.0" />
+      <TextField fx:id="txtAd" layoutX="7.0" layoutY="189.0" prefHeight="31.0" prefWidth="163.0" />
+      <Label layoutX="7.0" layoutY="170.0" prefHeight="19.0" prefWidth="58.0" text="İlac Ad :">
+         <font>
+            <Font name="Trebuchet MS" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="220.0" prefHeight="18.0" prefWidth="50.0" text="Fiyat :">
+         <font>
+            <Font name="Trebuchet MS" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFiyat" layoutX="7.0" layoutY="237.0" prefHeight="31.0" prefWidth="163.0" />
+      <Button layoutX="32.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnKaydet" prefHeight="56.0" prefWidth="119.0" style="-fx-background-color: white;" text="KAYDET" textFill="#36c3ff">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="120.0" prefHeight="19.0" prefWidth="77.0" text="İlac Adet :">
+         <font>
+            <Font name="Trebuchet MS" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdet" layoutX="7.0" layoutY="139.0" prefHeight="31.0" prefWidth="163.0" />
+      <Button fx:id="closeButton" layoutX="685.0" layoutY="389.0" mnemonicParsing="false" onAction="#CLoseBtn" prefHeight="46.0" prefWidth="112.0" text="CLOSE">
+         <font>
+            <Font name="Tahoma Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="667.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnGeri" prefHeight="48.0" prefWidth="138.0" text="&lt;--- Geri">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="726.0" layoutY="143.0" mnemonicParsing="false" onAction="#btnGörüntüle" text="G" textFill="#01c61b">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="726.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnKapat" text="X" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblview" layoutX="226.0" layoutY="79.0" prefHeight="299.0" prefWidth="494.0" />
+      <Button layoutX="487.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnDuzenle" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: yellow;" text="Düzenle" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="360.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnSil" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #ff0000;" text="Sil" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="234.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnGuncelle" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: black;" text="Güncelle" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnFormTemizle" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #131371;" text="Formu Temizle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="256.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnIlacTxtKayit" prefHeight="48.0" prefWidth="352.0" text="&gt;&gt;&gt;İlac Kayit TXT&lt;&lt;&lt;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

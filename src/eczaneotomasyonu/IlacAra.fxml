@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="800.0" style="-fx-background-color: #00d9ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eczaneotomasyonu.IlacAraController">
+   <children>
+      <Label layoutX="17.0" prefHeight="63.0" prefWidth="153.0" text="İlac Ara" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="158.0" prefHeight="19.0" prefWidth="57.0" text="İlac No :">
+         <font>
+            <Font name="Trebuchet MS" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtIlacno" layoutX="19.0" layoutY="176.0" prefHeight="31.0" prefWidth="163.0" />
+      <ImageView fitHeight="93.0" fitWidth="154.0" layoutX="304.0" layoutY="18.0">
+         <image>
+            <Image url="@../images/eczane.jpg" />
+         </image></ImageView>
+      <Button fx:id="closeButton" layoutX="602.0" layoutY="413.0" mnemonicParsing="false" onAction="#CloseBtn" prefHeight="44.0" prefWidth="154.0" text="CLOSE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="609.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnGeri" text="&lt;-----GERİ">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnIlacAra" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #131371;" text="Ara" textFill="#36c3ff">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtArea" layoutX="196.0" layoutY="120.0" prefHeight="250.0" prefWidth="370.0" />
+      <Button layoutX="634.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnDepo" prefHeight="111.0" prefWidth="116.0" style="-fx-background-color: red;" text="DEPO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="573.0" layoutY="172.0" mnemonicParsing="false" onAction="#btnTxtAreaTemizle" text="X" textFill="#ee0303">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
